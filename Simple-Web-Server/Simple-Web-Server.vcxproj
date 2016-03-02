@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc;$(IncludePath);F:\work\git\openssl_built\openssl\openssl-0.9.8m\include;F:\work\git\boost_1_57;</IncludePath>
-    <LibraryPath>$(LibraryPath);F:\work\git\boost_1_57\lib32-msvc-12.0;</LibraryPath>
+    <IncludePath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc;$(IncludePath);E:\art\src\openssl\openssl-0.9.8m\include;E:\art\src\boost_1_57</IncludePath>
+    <LibraryPath>$(LibraryPath);E:\art\src\boost_1_57\lib32-msvc-12.0;</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

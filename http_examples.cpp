@@ -17,7 +17,7 @@ using namespace boost::property_tree;
 typedef SimpleWeb::Server<SimpleWeb::HTTP> HttpServer;
 typedef SimpleWeb::Client<SimpleWeb::HTTP> HttpClient;
 
-#if 0
+#if 1
 int http_main() {
 #else
 int main() {

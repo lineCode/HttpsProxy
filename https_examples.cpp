@@ -17,13 +17,13 @@ using namespace boost::property_tree;
 typedef SimpleWeb::Server<SimpleWeb::HTTPS> HttpsServer;
 typedef SimpleWeb::Client<SimpleWeb::HTTPS> HttpsClient;
 
-#if 1
+#if 0
 int https_main() {
 #else
 int main() {
 #endif
     //HTTPS-server at port 8080 using 4 threads
-    HttpsServer server(8080, 4, "server.crt", "server.key");
+    HttpsServer server(8080, 4, "cacert.crt", "prvtkey.pem");
     
     //Add resources using path-regex and method-string, and an anonymous function
     //POST-example for the path /string, responds the posted string
@@ -113,7 +113,7 @@ int main() {
                             //read and send 128 KB at a time
                             size_t buffer_size=131072;
                             vector<char> buffer;
-                            buffer.reserve(buffer_size);
+                            buffer.resize(buffer_size);
                             size_t read_length;
                             try {
                                 while((read_length=ifs.read(&buffer[0], buffer_size).gcount())>0) {
