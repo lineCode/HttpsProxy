@@ -17,13 +17,24 @@ using namespace boost::property_tree;
 typedef SimpleWeb::Server<SimpleWeb::HTTPS> HttpsServer;
 typedef SimpleWeb::Client<SimpleWeb::HTTPS> HttpsClient;
 
+extern int main1();
 #if 0
 int https_main() {
 #else
 int main() {
 #endif
+
+#if 0
+	typedef int(*main1Type)();
+	main1Type main1Fun = (main1Type)main1;
+	thread HttpServerThread([main1Fun]{
+		main1Fun();
+	});
+#endif
+	
+
     //HTTPS-server at port 8080 using 4 threads
-    HttpsServer server(8080, 4, "cacert.crt", "prvtkey.pem");
+    HttpsServer server(8080, 4, "cacert.pem", "prvtkey.pem");
     
     //Add resources using path-regex and method-string, and an anonymous function
     //POST-example for the path /string, responds the posted string

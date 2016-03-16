@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simple-Web-Server", "Simple-Web-Server\Simple-Web-Server.vcxproj", "{66896300-A820-408B-8C37-4D1F87CD3B38}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyHttpsProxy", "MyHttpsProxy\MyHttpsProxy.vcxproj", "{98C99169-31B8-4FAA-8348-3CB67EBFE15F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{66896300-A820-408B-8C37-4D1F87CD3B38}.Debug|Win32.Build.0 = Debug|Win32
 		{66896300-A820-408B-8C37-4D1F87CD3B38}.Release|Win32.ActiveCfg = Release|Win32
 		{66896300-A820-408B-8C37-4D1F87CD3B38}.Release|Win32.Build.0 = Release|Win32
+		{98C99169-31B8-4FAA-8348-3CB67EBFE15F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98C99169-31B8-4FAA-8348-3CB67EBFE15F}.Debug|Win32.Build.0 = Debug|Win32
+		{98C99169-31B8-4FAA-8348-3CB67EBFE15F}.Release|Win32.ActiveCfg = Release|Win32
+		{98C99169-31B8-4FAA-8348-3CB67EBFE15F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
